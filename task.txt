@@ -1,0 +1,17 @@
+REST API - JSON
+GET /users - List all users = HTML document
+GET /api/users - List all users = JSON document
+GET /api/Users/1 - Get the user with ID 1
+GET /api/users/2 - Get the user with ID 2
+Here ID is a dynamic path parameter
+GET /api/users/:id (colon means dynamic)
+
+POST /api/users - Create a new user
+
+PATCH /api/users/ID - Edit the user with the ID
+
+DELETE /api/users/ID - Delete the user with the ID
+Using mockaru to generate fake data
+
+As the get patch and delete methods have same route we can create app.route
+app.route can handle multiple methods using express easily without the need to write the code multiple times
